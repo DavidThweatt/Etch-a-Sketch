@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Page Title</title>
+  <title>Etch-A-Sketch</title>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="style.css">
   <script src="file.js" defer></script>
 </head>
 <body>
-  
+    <div id="top">
+        <h1>Etch-A-Sketch</h1>
+    </div>
+    <div id="color-pad">
+        <div id="buttons">
+            <div>
+                <button id="color">Color Mode</button>
+            </div>
+            <div>
+                <button id="rainbow">Rainbow mode</button>
+            </div>
+            <div>
+                <button id="eraser">Eraser</button>
+            </div>
+            <div>
+                <button id="clear">Clear</button>
+            </div>
+            <div>
+                <input type="range" min="1" max="100" value="50" id="slider">
+            </div>
+        </div>
+        <div id="container"></div>
+    </div>
+    
 </body>
 </html>
