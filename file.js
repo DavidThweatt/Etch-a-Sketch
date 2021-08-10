@@ -10,3 +10,11 @@ function makeRows(rows, cols) {
 };
 
 makeRows(16, 16);
+
+let colorButton = document.getElementById("primary_color");
+let colorDiv = document.getElementById("color_val");
+
+colorButton.onchange = function() {
+  //colorDiv.innerHTML = colorButton.value;
+  colorDiv.style.color = colorButton.value;
+}

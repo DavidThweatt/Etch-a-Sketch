@@ -7,29 +7,26 @@
   <script src="file.js" defer></script>
 </head>
 <body>
-    <div id="top">
+    <header id="top">
         <h1>Etch-A-Sketch</h1>
-    </div>
-    <div id="color-pad">
-        <div id="buttons">
-            <div>
+    </header>
+    <div class="flexContainer">
+            <div class="left">
+                <input type="color" id="primary_color" class="field-radio">
+                <span class="container" id="color_val"></span>
                 <button id="color">Color Mode</button>
-            </div>
-            <div>
                 <button id="rainbow">Rainbow mode</button>
-            </div>
-            <div>
                 <button id="eraser">Eraser</button>
-            </div>
-            <div>
                 <button id="clear">Clear</button>
-            </div>
-            <div>
                 <input type="range" min="1" max="100" value="50" id="slider">
             </div>
-        </div>
-        <div id="container"></div>
+            <div class="right" id="container"></div>
     </div>
+
+    <footer>
+        <p class="footer">David Thweatt 2021</p>
+    </footer>
     
 </body>
+
 </html>
