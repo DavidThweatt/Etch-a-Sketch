@@ -32,20 +32,29 @@
     width: 500px;
     height: 500px;
     background-color: var(--secondary-light);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+  }
+
+  h1 {
+    text-shadow: 0 5px 15px #7DEDFF;
   }
   
   #container {
     position: relative;
     top: 10px;
-    height: 100px;
-    width: 75px;
+    height: 600px;
+    width: 600px;
     display: grid;
     grid-gap: 0px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
   
+  #container:hover{
+    box-shadow: 0 5px 15px #7DEDFF;
+  }
+
   .grid-item {
     padding: 1em;
     border: 1px solid #ddd;
@@ -99,8 +108,8 @@
   }
 
   #color.active {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
+    background-color: black;
+    color: white;
 }
 
 
