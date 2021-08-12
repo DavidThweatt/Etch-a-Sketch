@@ -1,7 +1,4 @@
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-  }
+
   body {
     background-color: #515E63;
     position: relative;
@@ -32,7 +29,6 @@
     width: 500px;
     height: 500px;
     background-color: var(--secondary-light);
-    
   }
 
   h1 {
@@ -42,12 +38,10 @@
   #container {
     position: relative;
     top: 10px;
-    height: 600px;
-    width: 600px;
+    max-height: 500px;
+    max-width: 500px;
     display: grid;
     grid-gap: 0px;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
   
@@ -184,6 +178,7 @@
     margin: 20px 40px;
     position: relative;
     right: 20px;
+    
   }
 
   #slider:hover {

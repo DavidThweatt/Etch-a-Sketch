@@ -1,3 +1,12 @@
+const default_color = black;
+const default_mode = 'color';
+const default_size = 16;
+
+let currentColor = default_color;
+let currentMode = default_mode;
+let currentSize = default_size;
+
+
 const container = document.getElementById("container");
 const colorWheel = document.getElementById("primary_color");
 const colorBTN = document.getElementById("color");
@@ -8,18 +17,16 @@ const slider = document.getElementById("slider");
 const colorDiv = document.getElementById("color_val");
 
 
-function makeRows(rows, cols) {
-  container.style.setProperty('--grid-rows', rows);
-  container.style.setProperty('--grid-cols', cols);
-  for (i = 0; i < (rows * cols); i++) {
-    let cell = document.createElement("div");
-    container.appendChild(cell).className = "grid-item";
+function setupGrid(size) {
+  container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+  container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+
+  for (let i = 0; i < size * size; i++) {
+    const gridElement = document.createElement('div');
+    gridElement.addEventListener('mouseover', changeColor);
+    container.appendChild(gridElement);
   };
 };
-
-makeRows(16, 16);
-
-
 
 colorWheel.onchange = function() {
   colorDiv.style.color = colorWheel.value;
@@ -69,3 +76,7 @@ container.addEventListener('mouseover', (e) => {
 // fucntion rainbowMode() {
 //    turns cells random rbg value with .math on mouse over
 // }
+
+window.onload = () => {
+  setupGrid(default_size);
+}
