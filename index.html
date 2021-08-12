@@ -4,7 +4,7 @@
   <title>Etch-A-Sketch</title>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="style.css">
-  <script src="file.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,10 +14,11 @@
             <div class="left">
                 <input type="color" id="primary_color" class="field-radio">
                 <span class="container" id="color_val"></span>
-                <button id="color">Color Mode</button>
-                <button id="rainbow">Rainbow mode</button>
-                <button id="eraser">Eraser</button>
-                <button id="clear">Clear</button>
+                <button class="btn" id="color">Color Mode</button>
+                <button class="btn" id="rainbow">Rainbow mode</button>
+                <button class="btn" id="eraser">Eraser</button>
+                <button class="btn" id="clear">Clear</button>
+                <div id="sizeValue" class="size-value">16 x 16</div>
                 <input type="range" min="16x16" max="100x100" value="50x50" id="slider">
             </div>
             <div class="right" id="container"></div>
