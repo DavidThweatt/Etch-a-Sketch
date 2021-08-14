@@ -96,23 +96,23 @@ function changeColor(e) {
 
 
 
-// function activateButton(newMode) {
-//   if (currentMode === 'rainbow') {
-//     rainbow.classList.remove('active');
-//   } else if (currentMode === 'color') {
-//     color.classList.remove('active');
-//   } else if (currentMode === 'eraser') {
-//     eraser.classList.remove('active');
-//   }
+function activateButton(newMode) {
+  if (currentMode === 'rainbow') {
+    rainbow.classList.remove('active');
+  } else if (currentMode === 'color') {
+    color.classList.remove('active');
+  } else if (currentMode === 'eraser') {
+    eraser.classList.remove('active');
+  }
 
-//   if (newMode === 'rainbow') {
-//     rainbow.classList.add('active');
-//   } else if (newMode === 'color') {
-//     color.classList.add('active');
-//   } else if (newMode === 'eraser') {
-//     eraser.classList.add('active');
-//   }
-// }
+  if (newMode === 'rainbow') {
+    rainbow.classList.add('active');
+  } else if (newMode === 'color') {
+    color.classList.add('active');
+  } else if (newMode === 'eraser') {
+    eraser.classList.add('active');
+  }
+}
 
 
 
